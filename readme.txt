@@ -1,3 +1,35 @@
+
+先在https://github.com/lizhi0755/下创建项目：pro_acload
+
+打开git bash命令行，执行下面的命令：
+
+# 进入你的项目目录
+# cd /path/to/your/project
+cd /H/cases/projects/pro_acload/sources
+
+# 初始化 Git（如果尚未初始化）
+git init
+
+# 添加远程仓库
+git remote add origin https://github.com/lizhi0755/pro_acload.git
+
+# 如果远程仓库的README.MD 不在本地仓库，需先拉去远程仓库，与本地仓库合并
+git pull origin main --rebase
+
+# 添加所有文件
+git add .
+
+# 提交更改
+git commit -m "Initial commit"
+
+# 推送到 GitHub（如果 main 分支不存在，可能需要使用 -u 选项）
+git branch -M main
+git push -u origin main
+
+
+
+
+
 项目跟目录
 ├──documents                         # 项目文档（比如需求文档）
 ├──installs                          # 安装目录
